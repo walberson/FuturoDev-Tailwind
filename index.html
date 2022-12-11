@@ -1,0 +1,113 @@
+<!-- 
+    px => pontos
+    em
+    rem
+    %
+    VH => VIEWPORT HEIGHT
+    VW => VIEWPORT WIDTH
+    max-width
+    max-height
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      .paragraph {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div
+        id="header"
+        class="px-[74px] flex flex-row items-center justify-between bg-[#D0EBFF] h-[72px]"
+      >
+        <span class="text-2xl"
+          >Futuro<span class="font-bold text-[#1971C2]">DEV</span></span
+        >
+        <div class="flex flex-row space-x-8 text-base text-[#1971C2]">
+          <span class="font-bold">Início</span>
+          <span>Sobre</span>
+          <span>Serviços</span>
+          <span>Depoimentos</span>
+        </div>
+        <div><button>Solicitar Serviço</button></div>
+      </div>
+      <div class="h-[37rem] bg-[#D0EBFF] flex flex-row">
+        <div class="w-1/2 flex flex-col space-y-[24px] item-left my-[80px]">
+          <span>SEJA BEM VINDO À TURMA FUTURO DEV! 👋</span>
+          <h1>Desenvolvimento de soluções rápidas</h1>
+          <p class="paragraph">
+            Os programadores do time FuturoDEV desenvolvem aplicações seguras e
+            robustas de ponta a ponta
+          </p>
+          <div>
+            <button class="bg-blue-500">Quero um dev!</button>
+          </div>
+        </div>
+        <img src="" alt="imagem" />
+      </div>
+      <!--
+  This component uses @tailwindcss/forms
+
+  yarn add @tailwindcss/forms
+  npm install @tailwindcss/forms
+
+  plugins: [require('@tailwindcss/forms')]
+-->
+
+      <a
+        href="#"
+        class="relative block overflow-hidden rounded-lg border border-gray-100 p-8"
+      >
+        <span
+          class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+        ></span>
+
+        <div class="justify-between sm:flex">
+          <div>
+            <h3 class="text-xl font-bold text-gray-900">
+              Building a SaaS product as a software developer
+            </h3>
+
+            <p class="mt-1 text-xs font-medium text-gray-600">By John Doe</p>
+          </div>
+
+          <div class="ml-3 hidden flex-shrink-0 sm:block">
+            <img
+              alt="Paul Clapton"
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+              class="h-16 w-16 rounded-lg object-cover shadow-sm"
+            />
+          </div>
+        </div>
+
+        <div class="mt-4 sm:pr-8">
+          <p class="text-sm text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit
+            illum provident a, ipsa maiores deleniti consectetur nobis et eaque.
+          </p>
+        </div>
+
+        <dl class="mt-6 flex">
+          <div class="flex flex-col-reverse">
+            <dt class="text-sm font-medium text-gray-600">Published</dt>
+            <dd class="text-xs text-gray-500">31st June, 2021</dd>
+          </div>
+
+          <div class="ml-3 flex flex-col-reverse sm:ml-6">
+            <dt class="text-sm font-medium text-gray-600">Reading time</dt>
+            <dd class="text-xs text-gray-500">3 minute</dd>
+          </div>
+        </dl>
+      </a>
+    </div>
+  </body>
+</html>
